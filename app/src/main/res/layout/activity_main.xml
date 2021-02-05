@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/board"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box11"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:alpha="0"
+        android:onClick="click11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/invsq"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box21"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:onClick="click21"
+        android:alpha="0"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box11"
+        app:srcCompat="@drawable/invsq"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box12"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="40dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box11"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="click12"
+        app:srcCompat="@drawable/invsq"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box22"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box21"
+        app:layout_constraintTop_toBottomOf="@+id/box12"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="click22"
+        app:srcCompat="@drawable/invsq"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box02"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="44dp"
+        android:alpha="0"
+        android:layout_marginBottom="40dp"
+        android:onClick="click02"
+        app:layout_constraintBottom_toTopOf="@+id/box12"
+        app:layout_constraintStart_toEndOf="@+id/box01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/invsq"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box10"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="click10"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/box11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/invsq"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box20"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/box21"
+        app:layout_constraintTop_toBottomOf="@+id/box10"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="click20"
+        app:srcCompat="@drawable/invsq"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box01"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="40dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@+id/box11"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="click01"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/invsq"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/box00"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="40dp"
+        android:alpha="0"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/box10"
+        app:layout_constraintEnd_toStartOf="@+id/box01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/invsq"
+        android:onClick="click00"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
